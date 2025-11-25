@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        div p{
+            color:#999;
+        }
+        .box > p{
+            background-color:blue;
+        }
+        div ~ p{
+            color:blueviolet;
+        }
+
+        a:hover{
+            color:brown;
+            font-size: 20px;
+        }
+        a:active{
+            color:bisque;
+        }
+        
+        a:link{
+            text-decoration:none; font-size: larger;
+        }
+        ul {
+            list-style:none; display: flex;
+        }
+        ul li{
+            margin: 20px; border-right: 1px solid #999;
+            padding-right: 20px;
+
+        }
+        ul li:hover{
+            color:blue;
+        }
+        ul li:nth-child(5){
+            border-right: 0px;
+        }
+        .para{
+            color:blue;
+        }
+        .para::first-letter{
+            background-color:aqua;
+        }
+        .para::after{
+            content:"Read More";
+            color:#f04;
+            font-size: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--CSS Conbinators-->
+
+    <div class="box">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis recusandae explicabo blanditiis reprehenderit, nemo numquam eaque veniam. Ipsam iste reprehenderit incidunt commodi impedit dicta, expedita aliquam nesciunt quos culpa?
+        </p>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam earum deleniti consequatur enim dolorem debitis, veritatis sit. Laboriosam, neque ullam numquam veritatis provident officia dolores! Ipsum doloribus fuga laborum?
+        </p>
+
+    </div>
+    </div>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ratione atque ea quisquam accusamus similique minima nemo enim? Iure ea excepturi blanditiis? Cupiditate vitae odit saepe ab nam reiciendis cumque.</p>
+    <a href="">Visit this link</a>
+    <ul type:none>
+        <li>home</li>
+        <li>services</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li>contact</li>
+        
+    </ul>
+    <!--CSS Pseudo-Element:style a specific part of an element-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis fugiat asperiores nulla excepturi ipsam inventore fugit impedit nam in unde reiciendis itaque deserunt facere aliquid similique maxime temporibus ut!
+        
+    </p>
+
+</body>
+</html>
