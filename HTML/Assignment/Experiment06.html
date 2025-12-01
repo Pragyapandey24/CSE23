@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 500px;
+            width: 1366px;
+            border: 2px solid black;
+            background-color: rgb(222, 232, 241);
+
+            
+        }
+        .navbar{
+            text-align: center;
+            background-color: black;
+            color: white;
+            
+        }
+        .box{
+            
+            display: flex;
+            
+            flex-direction: column;
+            align-items: center;
+           
+            
+            
+        }
+        
+        #image{
+            
+            height:280px;
+            width: 280px;
+            background-image: url("D32999s.webp");
+            background-size: cover;
+            
+        }
+        #cart{
+            background-color: rgba(6, 67, 248, 0.866);
+            color: white;
+            width:300px;
+            text-align: center;
+        }
+        
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>ShopEasy</h1>
+        </div>
+        <div>
+            <div class="box">
+              <div id="image"></div>
+              
+              <div><h3>Classic Cotton T-Shirt</h3></div>
+              <div><h5>Soft,breathable cotton.Regular fit. Available in multiple colors.</h5></div>
+              <div style="display: inline ; color: rgb(3, 154, 76);">₹799<div style="text-decoration: line-through; display: inline; color:grey;">₹1,199</div>
+              </div>
+              <div id="cart">Add to Cart</div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
