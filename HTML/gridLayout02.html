@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout02</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+         main{
+            display: grid;
+            grid-template-rows: 70px 50px 160px 300px 50px;
+            gap: 10px;
+        }
+        .section{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            
+        }
+        #box1{
+            background-color: grey;
+        }
+        #box2{
+            background-color: grey;
+            text-align: center;
+        }
+        #box3{
+            background-color: grey;
+            text-align: center;
+        }
+        #side{
+            background-color: grey;
+        }
+        #body{
+            background-color: grey;
+        }
+        #box4{
+            background-color: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1"><h2>Logo</h2></div>
+        <div id="box2"><h4>Navigation</h4></div>
+        <div id="box3"><h4>Header</h4></div>
+        <div class="section">
+            <div id="side"><h4>Side Area</h4></div>
+            <div id="body"><h4>Body Area</h4></div>
+        </div>
+        <div id="box4">Footer</div>
+        
+    </main>
+    
+</body>
+</html>
