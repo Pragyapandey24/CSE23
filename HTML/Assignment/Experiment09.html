@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-09</title>
+    <style>
+        .div1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 15px;
+           
+        }
+        .div{
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+        @media(max-width:1024px){
+            .div1{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width:600px){
+            .div1{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <div class="div">
+        <img src="high-quality.webp" height="350px" >
+        <p><b>Product 1</b></p>
+        <p>High-quality item with great features.</p>
+        <p>₹499</p>
+    </div>
+    <div class="div">
+        <img src="shoes.webp" height="350px">
+        <p><b>Product 2</b></p>
+        <p>Durable nad stylish for daily use.</p>
+        <p>₹799</p>
+    </div>
+    <div class="div">
+        <img src="iron.webp" height="350px">
+        <p><b>Product 3</b></p>
+        <p>Lightweight and comfortable.</p>
+        <p>₹1299</p>
+    </div>
+    <div class="div">
+        <img src="hoodie.webp" height="350px">
+        <p><b>Product 4</b></p>
+        <p>Trendy design with premium quality.</p>
+        <p>₹999</p>
+    </div>
+    </div>
+</body>
+</html>
